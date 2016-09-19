@@ -30,7 +30,13 @@ public class ViewPortalMainPageTests extends BaseTestClass{
 
         MAIN_PAGE.getElementClick(MAIN_PAGE.usefulLinksBtn);
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyBreadcrumbs(),true);
-        Thread.sleep(1000);
+        assertEquals(VIEW_USEFUL_LINK_PAGE.verifyItemLinkLength(),true);
+
+        VIEW_USEFUL_LINK_PAGE.getElementClick(VIEW_USEFUL_LINK_PAGE.itemLinkFirst);
+        assertEquals(MAIN_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
+                VIEW_USEFUL_LINK_PAGE.str_personalAccountLink);
+
+        Thread.sleep(5000);
     }
 
 }
