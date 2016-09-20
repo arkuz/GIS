@@ -34,18 +34,15 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyBreadcrumbs(),true);
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyItemLinkLength(),true);
 
-        Set<String> oldWindowHandler = MAIN_PAGE.getWindowHandler();
+        Set<String> oldWindowHandler = MAIN_PAGE.getWindowsSet();
         VIEW_USEFUL_LINK_PAGE.getElementClick(VIEW_USEFUL_LINK_PAGE.itemLinkFirst);
-        Set<String> newWindowHandler = MAIN_PAGE.getWindowHandler();
-
-        newWindowHandler.removeAll(oldWindowHandler);
-        String newWindowHandle = newWindowHandler.iterator().next();
-        webDriver.switchTo().window(newWindowHandle);
-
+        MAIN_PAGE.getNewWindow(oldWindowHandler);
         assertEquals(MAIN_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
                 VIEW_USEFUL_LINK_PAGE.str_personalAccountLink);
-        webDriver.close();
-        webDriver.switchTo().window(oldWindowHandler.iterator().next());
+        MAIN_PAGE.closeCurrentWindow();
+        MAIN_PAGE.getMainWindow(oldWindowHandler);
+
+
 
 
 

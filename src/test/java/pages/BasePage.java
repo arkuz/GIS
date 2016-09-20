@@ -31,7 +31,7 @@ public class BasePage {
         return webDriver.findElement(locator);
     }
 
-    public  Set<String>  getWindowHandler() {
+    public  Set<String>  getWindowsSet() {
         Set<String> windowsSet = webDriver.getWindowHandles();
         return windowsSet;
     }
@@ -60,5 +60,21 @@ public class BasePage {
 
     public String getElementText(By locator) {
         return webDriver.findElement(locator).getText();
+    }
+
+    public String getNewWindow(Set<String> oldWindowHandler) {
+        Set<String> newWindowsHandler = getWindowsSet();
+        newWindowsHandler.removeAll(oldWindowHandler);
+        String currentWindow = newWindowsHandler.iterator().next();
+        webDriver.switchTo().window(currentWindow);
+        return currentWindow;
+    }
+
+    public void closeCurrentWindow(){
+        webDriver.close();
+    }
+
+    public void getMainWindow(Set<String> oldWindowHandler){
+        webDriver.switchTo().window(oldWindowHandler.iterator().next());
     }
 }
