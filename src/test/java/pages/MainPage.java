@@ -13,5 +13,8 @@ public class MainPage extends BasePage {
     }
     //locators
     public By usefulLinksBtn = By.xpath("//useful-resources//a[@href='#!/useful-links']");
-
+    public By consumersLink = By.xpath("//a[@href='#!/audience/consumers']");
+    public By suppliersLink = By.xpath("//a[@href='#!/audience/suppliers']");
+    public By authoritiesLink = By.xpath("//a[@href='#!/audience/authorities']");
+    
 }
