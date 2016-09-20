@@ -9,6 +9,8 @@ import pages.BasePage;
 import pages.MainPage;
 import pages.ViewUsefulLinksPage;
 
+import java.util.Set;
+
 import static org.testng.Assert.assertEquals;
 
 /**
@@ -32,9 +34,21 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyBreadcrumbs(),true);
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyItemLinkLength(),true);
 
+        Set<String> oldWindowHandler = MAIN_PAGE.getWindowHandler();
         VIEW_USEFUL_LINK_PAGE.getElementClick(VIEW_USEFUL_LINK_PAGE.itemLinkFirst);
+        Set<String> newWindowHandler = MAIN_PAGE.getWindowHandler();
+
+        newWindowHandler.removeAll(oldWindowHandler);
+        String newWindowHandle = newWindowHandler.iterator().next();
+        webDriver.switchTo().window(newWindowHandle);
+
         assertEquals(MAIN_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
                 VIEW_USEFUL_LINK_PAGE.str_personalAccountLink);
+        webDriver.close();
+        webDriver.switchTo().window(oldWindowHandler.iterator().next());
+
+
+
 
         Thread.sleep(5000);
     }

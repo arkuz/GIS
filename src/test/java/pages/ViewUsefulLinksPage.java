@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by Arkuz on 14.09.2016.
@@ -62,5 +63,6 @@ public class ViewUsefulLinksPage extends BasePage{
             return true;
         }else return false;
     }
+
 }
 

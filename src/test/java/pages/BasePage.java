@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Set;
+
 import static java.lang.Thread.sleep;
 
 /**
@@ -29,9 +31,10 @@ public class BasePage {
         return webDriver.findElement(locator);
     }
 
-    /*public void getElementClick(By locator) {
-        webDriver.findElement(locator).click();
-    }*/
+    public  Set<String>  getWindowHandler() {
+        Set<String> windowsSet = webDriver.getWindowHandles();
+        return windowsSet;
+    }
 
     public void getElementClick(By locator) throws InterruptedException {
         WebElement myDynamicElement = waitForClickabilityOfElement(locator);
