@@ -1,6 +1,7 @@
 package tests.OCH.ViewPortalMainPage;
 
 import lib.BaseTestClass;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -34,20 +35,13 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyBreadcrumbs(),true);
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyItemLinkLength(),true);
 
-        Set<String> oldWindowHandler = MAIN_PAGE.getWindowsSet();
+        Set<String> oldWindowHandler = VIEW_USEFUL_LINK_PAGE.getWindowsSet();
         VIEW_USEFUL_LINK_PAGE.getElementClick(VIEW_USEFUL_LINK_PAGE.itemLinkFirst);
-        MAIN_PAGE.getNewWindow(oldWindowHandler);
-        assertEquals(MAIN_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
+        VIEW_USEFUL_LINK_PAGE.getNewWindow(oldWindowHandler);
+        assertEquals(VIEW_USEFUL_LINK_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
                 VIEW_USEFUL_LINK_PAGE.str_personalAccountLink);
-        MAIN_PAGE.closeCurrentWindow();
-        MAIN_PAGE.getMainWindow(oldWindowHandler);
-
-
-
-
-
-
-        Thread.sleep(5000);
+        VIEW_USEFUL_LINK_PAGE.closeCurrentWindow();
+        VIEW_USEFUL_LINK_PAGE.getMainWindow(oldWindowHandler);
     }
 
 }
