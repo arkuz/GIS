@@ -4,7 +4,3 @@ http://testlink.lanit.ru/linkto.php?tprojectPrefix=HCS&item=testcase&id=HCS-6305
 
 2) HCS-6309:OCH_50 Просмотр списка ссылок с внутренних страниц портала ГИС ЖКХ
 http://testlink.lanit.ru/linkto.php?tprojectPrefix=HCS&item=testcase&id=HCS-6309
-
-
-
-//div[@class='useful-resources__list-items']/ul
