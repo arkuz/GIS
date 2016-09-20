@@ -74,7 +74,8 @@ public class BasePage {
         webDriver.close();
     }
 
-    public void getMainWindow(Set<String> oldWindowHandler){
-        webDriver.switchTo().window(oldWindowHandler.iterator().next());
+    public void getMainWindow(Set<String> WindowHandler){
+        String currentWindow = WindowHandler.iterator().next();
+        webDriver.switchTo().window(currentWindow);
     }
 }

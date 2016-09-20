@@ -18,7 +18,6 @@ public class ViewUsefulLinksPage extends BasePage{
     }
 
     //locators
-    public By usefulLinksH1 = By.xpath("//h1[@ng-bind='pageTitle']");
     public By breadcrumbs = By.xpath("//form-header//li");
     public By itemLink = By.xpath("//useful-link-item//a");
     public By itemLinkFirst = By.xpath("//useful-link-item//a[contains(text(),'Сайт государственных услуг')]");
