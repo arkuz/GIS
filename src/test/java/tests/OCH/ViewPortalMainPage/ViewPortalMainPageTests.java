@@ -2,7 +2,6 @@ package tests.OCH.ViewPortalMainPage;
 
 import lib.BaseTestClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.GosbarPage;
 import pages.MainPage;
@@ -66,7 +65,19 @@ public class ViewPortalMainPageTests extends BaseTestClass{
     public void testViewUsefulLinksWithInnerPages() throws InterruptedException {
 
         MAIN_PAGE.getElementClick(MAIN_PAGE.consumersLink);
+        ViewUsefulLinksWithInnerPagesMethod();
 
+        MAIN_PAGE.getElementClick(MAIN_PAGE.suppliersLink);
+        ViewUsefulLinksWithInnerPagesMethod();
 
+        MAIN_PAGE.getElementClick(MAIN_PAGE.authoritiesLink);
+        ViewUsefulLinksWithInnerPagesMethod();
+    }
+
+    // основная часть теста testViewUsefulLinksWithInnerPages()
+    private void ViewUsefulLinksWithInnerPagesMethod() {
+        assertEquals(MAIN_PAGE.verifyUsefulLinksCount(),true);
+        assertEquals(MAIN_PAGE.verifyUsefulLinksIcons(),true);
+        assertEquals(MAIN_PAGE.verifyUsefulLinksName(),true);
     }
 }
