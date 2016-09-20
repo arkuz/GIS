@@ -16,5 +16,5 @@ public class MainPage extends BasePage {
     public By consumersLink = By.xpath("//a[@href='#!/audience/consumers']");
     public By suppliersLink = By.xpath("//a[@href='#!/audience/suppliers']");
     public By authoritiesLink = By.xpath("//a[@href='#!/audience/authorities']");
-    
+
 }

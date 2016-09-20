@@ -2,6 +2,7 @@ package tests.OCH.ViewPortalMainPage;
 
 import lib.BaseTestClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.GosbarPage;
 import pages.MainPage;
@@ -63,6 +64,8 @@ public class ViewPortalMainPageTests extends BaseTestClass{
 
     @Test(description = "OCH_50 Просмотр списка ссылок с внутренних страниц портала ГИС ЖКХ")
     public void testViewUsefulLinksWithInnerPages() throws InterruptedException {
+
+        MAIN_PAGE.getElementClick(MAIN_PAGE.consumersLink);
 
 
     }

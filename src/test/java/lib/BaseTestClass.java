@@ -6,15 +6,20 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import pages.BasePage;
 
 public class BaseTestClass {
 
   public static WebDriver webDriver;
-  public static String mainPageURL = "http://dom.gosuslugi.ru/#!/main";
+  public static String homePageURL = "http://dom.gosuslugi.ru/#!/main";
+
+  @BeforeMethod
+  public void getHomePage(){
+    webDriver.get(homePageURL);
+  }
 
   @BeforeClass
   public static void startBrowser() {
@@ -23,7 +28,6 @@ public class BaseTestClass {
     webDriver = new ChromeDriver();
     webDriver.manage().window().maximize();
     webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    webDriver.get(mainPageURL);
   }
 
   @AfterClass
