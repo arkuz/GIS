@@ -44,6 +44,7 @@ public class ViewPortalMainPageTests extends BaseTestClass{
 
     }
 
+    // основная часть теста testViewUsefulLinks()
     private void viewUsefulLinksMethod() throws InterruptedException {
 
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyBreadcrumbs(),true);
@@ -52,11 +53,17 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         Set<String> oldWindowHandler = VIEW_USEFUL_LINK_PAGE.getWindowsSet();
         VIEW_USEFUL_LINK_PAGE.getElementClick(VIEW_USEFUL_LINK_PAGE.itemLinkFirst);
         VIEW_USEFUL_LINK_PAGE.getNewWindow(oldWindowHandler);
+
         assertEquals(VIEW_USEFUL_LINK_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
                 VIEW_USEFUL_LINK_PAGE.str_personalAccountLink);
+
         VIEW_USEFUL_LINK_PAGE.closeCurrentWindow();
         VIEW_USEFUL_LINK_PAGE.getMainWindow(oldWindowHandler);
     }
 
+    @Test(description = "OCH_50 Просмотр списка ссылок с внутренних страниц портала ГИС ЖКХ")
+    public void testViewUsefulLinksWithInnerPages() throws InterruptedException {
 
+
+    }
 }
