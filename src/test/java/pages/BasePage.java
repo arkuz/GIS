@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.Set;
 
 import static java.lang.Thread.sleep;
@@ -77,5 +78,10 @@ public class BasePage {
     public void getMainWindow(Set<String> WindowHandler){
         String currentWindow = WindowHandler.iterator().next();
         webDriver.switchTo().window(currentWindow);
+    }
+
+    public List<WebElement> getElements(By locator){
+        List<WebElement> list = webDriver.findElements(locator);
+        return list;
     }
 }
