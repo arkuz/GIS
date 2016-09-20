@@ -29,7 +29,7 @@ public class MainPage extends BasePage {
     }
 
     // проверка наличия элементов с иконками
-    public boolean verifyUsefulLinksIcons(){
+    public boolean verifyUsefulLinksIcon(){
         int flag = 1;
         String attr = "useful-resources__list-i-icon useful-resources__icon-link";
         List<WebElement> bc = getElements(usefulLinksUnit);

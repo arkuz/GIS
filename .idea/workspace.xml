@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb09642-4d95-4c36-a014-40b53f6cba6c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java" afterPath="$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java" />
     </list>
     <ignored path="alfa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,34 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewPortalMainPageTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewPortalMainPageTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="63" column="91" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="91" />
+            <state relative-caret-position="167">
+              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Описание тестов" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Описание тестов">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -96,12 +78,12 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/GosBarPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ViewUsefulLinksPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SiteMapPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/GosbarPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/Описание тестов" />
         <option value="$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
       </list>
     </option>
   </component>
@@ -277,59 +259,7 @@
       <recent name="D:\GitHub\GIS\src\test\java\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ViewPortalMainPageTests.testViewUsefulLinks">
-    <configuration default="false" name="OrgRegAndGiveFunc.testHeadphones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.uncategorized.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GIS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests.uncategorized" />
-      <option name="MAIN_CLASS_NAME" value="tests.uncategorized.OrgRegAndGiveFunc" />
-      <option name="METHOD_NAME" value="testHeadphones" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="OrgRegAndGiveFunc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.uncategorized.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GIS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests.uncategorized" />
-      <option name="MAIN_CLASS_NAME" value="tests.uncategorized.OrgRegAndGiveFunc" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.ViewPortalMainPageTests">
     <configuration default="false" name="OrgRegAndGiveFunc.Start" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -396,6 +326,72 @@
       <option name="PACKAGE_NAME" value="tests.OCH.view_portal_main_page" />
       <option name="MAIN_CLASS_NAME" value="tests.OCH.ViewPortalMainPage.ViewPortalMainPageTests" />
       <option name="METHOD_NAME" value="testViewUsefulLinks" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="ViewPortalMainPageTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.OCH.ViewPortalMainPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GIS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests.OCH.ViewPortalMainPage" />
+      <option name="MAIN_CLASS_NAME" value="tests.OCH.ViewPortalMainPage.ViewPortalMainPageTests" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.OCH.ViewPortalMainPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GIS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests.OCH.ViewPortalMainPage" />
+      <option name="MAIN_CLASS_NAME" value="tests.OCH.ViewPortalMainPage.ViewPortalMainPageTests" />
+      <option name="METHOD_NAME" value="testViewUsefulLinksWithInnerPages" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -660,19 +656,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc.testHeadphones" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc.Start" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc.Start" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc.Start" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc.testHeadphones" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.OrgRegAndGiveFunc.Start" />
       </list>
     </recent_temporary>
   </component>
@@ -693,35 +689,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 20h 44m 28s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests - 2016.09.21 at 01h 18m 48s.xml">
+      <configuration name="ViewPortalMainPageTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 20h 47m 44s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests - 2016.09.21 at 01h 22m 46s.xml">
+      <configuration name="ViewPortalMainPageTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 20h 49m 08s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 00m 26s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 20h 51m 03s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 01m 11s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 20h 52m 37s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 03m 45s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 21h 03m 05s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 04m 25s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 21h 11m 31s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 06m 05s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 21h 13m 16s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 07m 55s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 21h 18m 28s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 09m 56s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinks - 2016.09.20 at 21h 19m 46s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinks" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 11m 35s.xml">
+      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -730,28 +726,28 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -767,15 +763,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/pages/BasePage.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -918,28 +906,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/GosbarPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -949,44 +921,63 @@
         <state relative-caret-position="204">
           <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="66" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+          <folding>
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/ViewUsefulLinksPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-306">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Описание тестов">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="78" />
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="63" column="91" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="91" />
+        <state relative-caret-position="167">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>

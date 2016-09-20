@@ -77,7 +77,7 @@ public class ViewPortalMainPageTests extends BaseTestClass{
     // основная часть теста testViewUsefulLinksWithInnerPages()
     private void ViewUsefulLinksWithInnerPagesMethod() {
         assertEquals(MAIN_PAGE.verifyUsefulLinksCount(),true);
-        assertEquals(MAIN_PAGE.verifyUsefulLinksIcons(),true);
+        assertEquals(MAIN_PAGE.verifyUsefulLinksIcon(),true);
         assertEquals(MAIN_PAGE.verifyUsefulLinksName(),true);
     }
 }
