@@ -57,4 +57,19 @@ public class MainPage extends BasePage {
             return true;
         }else return false;
     }
+
+    // проверка наличия элементов c описаниями
+    public boolean verifyUsefulLinksDescription(){
+        int flag = 1;
+        String attr = "link.desc";
+        List<WebElement> bc = getElements(usefulLinksUnit);
+        for(int i=0;i<bc.size();i++) {
+            if(bc.get(i).findElement(By.xpath(".//p[@ng-bind='link.desc']")).getAttribute("ng-bind").equals(attr)){
+                flag = flag * 1;
+            }else flag = 0;
+        }
+        if(flag==1){
+            return true;
+        }else return false;
+    }
 }

@@ -44,6 +44,22 @@ public class ViewPortalMainPageTests extends BaseTestClass{
 
     }
 
+    @Test(description = "OCH_50 Просмотр списка ссылок с внутренних страниц портала ГИС ЖКХ")
+    public void testViewUsefulLinksWithInnerPages() throws InterruptedException {
+
+        //Просмотр блока полезных ссылок с потребителей
+        MAIN_PAGE.getElementClick(MAIN_PAGE.consumersLink);
+        ViewUsefulLinksWithInnerPagesMethod();
+
+        //Просмотр блока полезных ссылок с поставщиков
+        MAIN_PAGE.getElementClick(MAIN_PAGE.suppliersLink);
+        ViewUsefulLinksWithInnerPagesMethod();
+
+        //Просмотр блока полезных ссылок с органов власти
+        MAIN_PAGE.getElementClick(MAIN_PAGE.authoritiesLink);
+        ViewUsefulLinksWithInnerPagesMethod();
+    }
+
     // основная часть теста testViewUsefulLinks()
     private void viewUsefulLinksMethod() throws InterruptedException {
 
@@ -61,23 +77,11 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         VIEW_USEFUL_LINK_PAGE.getMainWindow(oldWindowHandler);
     }
 
-    @Test(description = "OCH_50 Просмотр списка ссылок с внутренних страниц портала ГИС ЖКХ")
-    public void testViewUsefulLinksWithInnerPages() throws InterruptedException {
-
-        MAIN_PAGE.getElementClick(MAIN_PAGE.consumersLink);
-        ViewUsefulLinksWithInnerPagesMethod();
-
-        MAIN_PAGE.getElementClick(MAIN_PAGE.suppliersLink);
-        ViewUsefulLinksWithInnerPagesMethod();
-
-        MAIN_PAGE.getElementClick(MAIN_PAGE.authoritiesLink);
-        ViewUsefulLinksWithInnerPagesMethod();
-    }
-
     // основная часть теста testViewUsefulLinksWithInnerPages()
     private void ViewUsefulLinksWithInnerPagesMethod() {
         assertEquals(MAIN_PAGE.verifyUsefulLinksCount(),true);
         assertEquals(MAIN_PAGE.verifyUsefulLinksIcon(),true);
         assertEquals(MAIN_PAGE.verifyUsefulLinksName(),true);
+        assertEquals(MAIN_PAGE.verifyUsefulLinksDescription(),true);
     }
 }
