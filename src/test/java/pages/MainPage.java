@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static java.lang.Thread.sleep;
+import static org.testng.Assert.assertEquals;
+
 /**
  * Created by Arkuz on 15.09.2016.
  */
@@ -21,6 +24,12 @@ public class MainPage extends BasePage {
     public By authoritiesLink = By.xpath("//a[@href='#!/audience/authorities']");
     public By usefulLinksUnit = By.xpath("//ul[@class='useful-resources__list-items']/li");
     public By kodexLink = By.xpath("//recent-docs//a[text()='ЖИЛИЩНЫЙ КОДЕКС РФ']");
+
+    public boolean checkDownloadKodexFile(String path) throws InterruptedException {
+        if(checkDownloadFile(kodexLink, path)){
+            return true;
+        }else return false;
+    }
 
     // проверка количества полезных ссылок <=7
     public boolean verifyUsefulLinksCount(){

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb09642-4d95-4c36-a014-40b53f6cba6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Тесты.xlsx" afterPath="$PROJECT_DIR$/Тесты.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java" afterPath="$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java" />
@@ -28,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewPortalMainPageTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewPortalMainPageTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="71" column="5" selection-start-line="62" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="201">
+              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,18 +42,18 @@
       <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+            <state relative-caret-position="140">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+            <state relative-caret-position="123">
+              <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -693,8 +692,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testSaveKodexFile" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
       </list>
@@ -717,6 +716,12 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="ViewPortalMainPageTests - 2016.09.22 at 20h 51m 26s.xml">
+      <configuration name="ViewPortalMainPageTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ViewPortalMainPageTests - 2016.09.22 at 20h 54m 30s.xml">
+      <configuration name="ViewPortalMainPageTests" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="ViewPortalMainPageTests_testSaveKodexFile - 2016.09.22 at 20h 38m 16s.xml">
       <configuration name="ViewPortalMainPageTests.testSaveKodexFile" configurationId="TestNG" />
     </history-entry>
@@ -729,14 +734,8 @@
     <history-entry file="ViewPortalMainPageTests_testSaveKodexFile - 2016.09.22 at 20h 47m 00s.xml">
       <configuration name="ViewPortalMainPageTests.testSaveKodexFile" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 06m 05s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 07m 55s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 09m 56s.xml">
-      <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
+    <history-entry file="ViewPortalMainPageTests_testSaveKodexFile - 2016.09.22 at 21h 15m 59s.xml">
+      <configuration name="ViewPortalMainPageTests.testSaveKodexFile" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ViewPortalMainPageTests_testViewUsefulLinksWithInnerPages - 2016.09.21 at 01h 11m 35s.xml">
       <configuration name="ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" configurationId="TestNG" />
@@ -983,29 +982,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="201">
+          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+        <state relative-caret-position="140">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="71" column="5" selection-start-line="62" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="123">
+          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

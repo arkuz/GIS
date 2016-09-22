@@ -98,4 +98,13 @@ public class BasePage {
         }
     }
 
+    public boolean checkDownloadFile(By locator, String path) throws InterruptedException {
+        deleteFile(path);
+        getElementClick(locator);
+        sleep(5000);
+        if(isFileExist(path)){
+            return true;
+        }else return false;
+    }
+
 }

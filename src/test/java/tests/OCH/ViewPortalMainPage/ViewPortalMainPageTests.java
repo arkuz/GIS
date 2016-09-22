@@ -64,11 +64,7 @@ public class ViewPortalMainPageTests extends BaseTestClass{
     public void testSaveKodexFile() throws InterruptedException {
 
         String path = "C:\\Users\\Arkuz\\Downloads\\Жилищный кодекс.pdf";
-        MAIN_PAGE.deleteFile(path);
-        MAIN_PAGE.getElementClick(MAIN_PAGE.kodexLink);
-
-        sleep(5000);
-        assertEquals(MAIN_PAGE.isFileExist(path),true);
+        assertEquals(MAIN_PAGE.checkDownloadKodexFile(path),true);
     }
 
 
