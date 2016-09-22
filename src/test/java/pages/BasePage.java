@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.util.List;
 import java.util.Set;
 
@@ -84,4 +85,17 @@ public class BasePage {
         List<WebElement> list = webDriver.findElements(locator);
         return list;
     }
+
+    public boolean isFileExist(String path){
+        File file = new File(path);
+        return file.exists();
+    }
+
+    public void deleteFile(String path){
+        File file = new File(path);
+        if (isFileExist(path)) {
+            file.delete();
+        }
+    }
+
 }

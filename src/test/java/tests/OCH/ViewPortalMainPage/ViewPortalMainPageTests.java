@@ -60,6 +60,18 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         ViewUsefulLinksWithInnerPagesMethod();
     }
 
+    @Test(description = "OCH_49 Проверка наличия ЖИЛИЩНОГО КОДЕКСА РФ")
+    public void testSaveKodexFile() throws InterruptedException {
+
+        String path = "C:\\Users\\Arkuz\\Downloads\\Жилищный кодекс.pdf";
+        MAIN_PAGE.deleteFile(path);
+        MAIN_PAGE.getElementClick(MAIN_PAGE.kodexLink);
+
+        sleep(5000);
+        assertEquals(MAIN_PAGE.isFileExist(path),true);
+    }
+
+
     // основная часть теста testViewUsefulLinks()
     private void viewUsefulLinksMethod() throws InterruptedException {
 

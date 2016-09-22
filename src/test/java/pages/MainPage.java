@@ -20,6 +20,7 @@ public class MainPage extends BasePage {
     public By suppliersLink = By.xpath("//a[@href='#!/audience/suppliers']");
     public By authoritiesLink = By.xpath("//a[@href='#!/audience/authorities']");
     public By usefulLinksUnit = By.xpath("//ul[@class='useful-resources__list-items']/li");
+    public By kodexLink = By.xpath("//recent-docs//a[text()='ЖИЛИЩНЫЙ КОДЕКС РФ']");
 
     // проверка количества полезных ссылок <=7
     public boolean verifyUsefulLinksCount(){
