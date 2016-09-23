@@ -98,4 +98,16 @@ public class BasePage {
         }
     }
 
+    public boolean waitFileExist(String path) throws InterruptedException {
+        int i = 0;
+        while (i < 15) {
+            if (isFileExist(path)) {
+                return true;
+            }
+            sleep(1000);
+            i++;
+        }
+        return false;
+    }
+
 }

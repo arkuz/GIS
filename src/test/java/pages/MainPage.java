@@ -28,10 +28,10 @@ public class MainPage extends BasePage {
     public boolean checkDownloadKodexFile(String path) throws InterruptedException {
         deleteFile(path);
         getElementClick(kodexLink);
-        sleep(5000);
-        if(isFileExist(path)){
+        if (waitFileExist(path)) {
             return true;
-        }else return false;
+        }
+        return false;
     }
 
     // проверка количества полезных ссылок <=7
