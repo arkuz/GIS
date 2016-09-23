@@ -26,7 +26,10 @@ public class MainPage extends BasePage {
     public By kodexLink = By.xpath("//recent-docs//a[text()='ЖИЛИЩНЫЙ КОДЕКС РФ']");
 
     public boolean checkDownloadKodexFile(String path) throws InterruptedException {
-        if(checkDownloadFile(kodexLink, path)){
+        deleteFile(path);
+        getElementClick(kodexLink);
+        sleep(5000);
+        if(isFileExist(path)){
             return true;
         }else return false;
     }
