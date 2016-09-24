@@ -30,8 +30,8 @@
       <file leaf-file-name="ViewPortalMainPageTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewPortalMainPageTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="157">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="46" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,22 +73,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteMapPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/SiteMapPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LicensesRegistryOfSubjectsTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/LicensesRegistryOfSubjectsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="218">
+              <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,9 +153,9 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/MenuPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/OCH/LicensesRegistryOfSubjects/LicensesRegistryOfSubjectsTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/LicensesRegistryOfSubjectsTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/OCH/ViewPortalMainPage/ViewPortalMainPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewPortalMainPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/LicensesRegistryOfSubjectsTests.java" />
       </list>
     </option>
   </component>
@@ -365,33 +357,7 @@
       <recent name="D:\GitHub\GIS\src\test\java\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages">
-    <configuration default="false" name="AcceptFunc.Start" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.uncategorized.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="GIS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests.uncategorized" />
-      <option name="MAIN_CLASS_NAME" value="tests.uncategorized.AcceptFunc" />
-      <option name="METHOD_NAME" value="Start" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.LicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS">
     <configuration default="false" name="ViewPortalMainPageTests.testViewUsefulLinks" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -505,6 +471,39 @@
       <option name="PACKAGE_NAME" value="tests.OCH.ViewPortalMainPage" />
       <option name="MAIN_CLASS_NAME" value="tests.OCH.FirstPriority.ViewPortalMainPageTests" />
       <option name="METHOD_NAME" value="testSaveKodexFile" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="LicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.OCH.FirstPriority.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="GIS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests.OCH.FirstPriority" />
+      <option name="MAIN_CLASS_NAME" value="tests.OCH.FirstPriority.LicensesRegistryOfSubjectsTests" />
+      <option name="METHOD_NAME" value="testViewLicenseCardInOpenPartRLS" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -769,19 +768,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testSaveKodexFile" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testSaveKodexFile" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.LicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testSaveKodexFile" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AcceptFunc.Start" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.LicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinksWithInnerPages" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testSaveKodexFile" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ViewPortalMainPageTests.testViewUsefulLinks" />
       </list>
     </recent_temporary>
   </component>
@@ -802,14 +801,14 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="LicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.09.24 at 17h 06m 07s.xml">
+      <configuration name="LicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="ViewPortalMainPageTests - 2016.09.24 at 14h 34m 19s.xml">
       <configuration name="ViewPortalMainPageTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ViewPortalMainPageTests - 2016.09.24 at 14h 56m 49s.xml">
       <configuration name="ViewPortalMainPageTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ViewPortalMainPageTests_testSaveKodexFile - 2016.09.24 at 02h 23m 39s.xml">
-      <configuration name="ViewPortalMainPageTests.testSaveKodexFile" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ViewPortalMainPageTests_testSaveKodexFile - 2016.09.24 at 02h 27m 54s.xml">
       <configuration name="ViewPortalMainPageTests.testSaveKodexFile" configurationId="TestNG" />
@@ -1079,6 +1078,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SiteMapPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/MenuPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1091,18 +1098,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SiteMapPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewPortalMainPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="157">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="46" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1111,9 +1110,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/LicensesRegistryOfSubjectsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="218">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
