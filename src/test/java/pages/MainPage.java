@@ -1,5 +1,6 @@
 package pages;
 
+import helpers.FunctionsOS;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +15,8 @@ import static org.testng.Assert.assertEquals;
  */
 public class MainPage extends BasePage {
 
+    FunctionsOS FUNCTIONS_OS = new FunctionsOS(getDriver());
+
     public MainPage(WebDriver driver){
         super(driver);
     }
@@ -26,9 +29,9 @@ public class MainPage extends BasePage {
     public By kodexLink = By.xpath("//recent-docs//a[text()='ЖИЛИЩНЫЙ КОДЕКС РФ']");
 
     public boolean checkDownloadKodexFile(String path) throws InterruptedException {
-        deleteFile(path);
+        FUNCTIONS_OS.deleteFile(path);
         getElementClick(kodexLink);
-        if (waitFileExist(path)) {
+        if (FUNCTIONS_OS.waitFileExist(path)) {
             return true;
         }
         return false;

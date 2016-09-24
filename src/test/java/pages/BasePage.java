@@ -86,28 +86,5 @@ public class BasePage {
         return list;
     }
 
-    public boolean isFileExist(String path){
-        File file = new File(path);
-        return file.exists();
-    }
-
-    public void deleteFile(String path){
-        File file = new File(path);
-        if (isFileExist(path)) {
-            file.delete();
-        }
-    }
-
-    public boolean waitFileExist(String path) throws InterruptedException {
-        int i = 0;
-        while (i < 15) {
-            if (isFileExist(path)) {
-                return true;
-            }
-            sleep(1000);
-            i++;
-        }
-        return false;
-    }
 
 }
