@@ -4,6 +4,7 @@ package lib;
 import java.util.concurrent.TimeUnit;
 
 import helpers.FunctionsOS;
+import helpers.Waiters;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;

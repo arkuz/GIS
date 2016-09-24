@@ -1,5 +1,6 @@
 package pages;
 
+import helpers.Waiters;
 import lib.BaseTestClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,9 +21,12 @@ import static java.lang.Thread.sleep;
 public class BasePage {
 
     protected WebDriver webDriver;
+    Waiters WAIT;
 
     public BasePage(WebDriver driver){
+
         this.webDriver = driver;
+        WAIT = new Waiters(driver);
     }
 
     public WebDriver getDriver(){
@@ -39,7 +43,7 @@ public class BasePage {
     }
 
     public void getElementClick(By locator) throws InterruptedException {
-        WebElement myDynamicElement = waitForClickabilityOfElement(locator);
+        WebElement myDynamicElement = WAIT.waitForClickabilityOfElement(locator);
         int i = 0;
         while (i < 20) {
             try {
@@ -52,12 +56,6 @@ public class BasePage {
                 continue;
             }
         }
-    }
-
-    public WebElement waitForClickabilityOfElement(By locator) {
-        WebElement element = (new WebDriverWait(webDriver, 15))
-                .until(ExpectedConditions.elementToBeClickable(locator));
-        return element;
     }
 
     public String getElementText(By locator) {

@@ -10,10 +10,12 @@ import static java.lang.Thread.sleep;
 /**
  * Created by Arkuz on 24.09.2016.
  */
-public class FunctionsOS extends BasePage {
+public class FunctionsOS {
+
+    protected WebDriver driver;
 
     public FunctionsOS(WebDriver driver){
-        super(driver);
+        this.driver = driver;
         }
 
     // Проверить, что файл существует
