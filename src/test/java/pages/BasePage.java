@@ -21,7 +21,7 @@ import static java.lang.Thread.sleep;
 public class BasePage {
 
     protected WebDriver webDriver;
-    Waiters WAIT;
+    static Waiters WAIT;
 
     public BasePage(WebDriver driver){
 

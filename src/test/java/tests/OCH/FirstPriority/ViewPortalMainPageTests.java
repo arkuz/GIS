@@ -1,4 +1,4 @@
-package tests.OCH.ViewPortalMainPage;
+package tests.OCH.FirstPriority;
 
 import lib.BaseTestClass;
 import org.testng.annotations.BeforeClass;
@@ -17,6 +17,8 @@ import static org.testng.Assert.assertEquals;
  * Created by Arkuz on 14.09.2016.
  */
 public class ViewPortalMainPageTests extends BaseTestClass{
+
+    //Группа тестов : Просмотр главной страницы портала ГИС ЖКХ + Футер
 
     private static MainPage MAIN_PAGE;
     private static ViewUsefulLinksPage VIEW_USEFUL_LINK_PAGE;
