@@ -34,4 +34,9 @@ public class LicensePageRLS extends BasePage {
         }
         return false;
     }
+
+    public void clickLicenseBusinessDocsTab() {
+        getElement(licenseBusinessDocs);
+    }
+
 }

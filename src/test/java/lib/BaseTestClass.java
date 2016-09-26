@@ -16,7 +16,8 @@ import pages.BasePage;
 public class BaseTestClass {
 
   public static WebDriver webDriver;
-  public static String homePageURL = "http://dom.gosuslugi.ru/#!/main";
+  public static String homePageURL = "http://dom.gosuslugi.ru/";
+  //public static String homePageURL = "https://lanit:tv,n8!Ya@kpak.dom.test.gosuslugi.ru/";
 
   @BeforeMethod
   public void getHomePage(){

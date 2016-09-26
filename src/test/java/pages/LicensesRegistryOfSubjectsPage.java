@@ -12,7 +12,12 @@ public class LicensesRegistryOfSubjectsPage extends BasePage {
         super(driver);
     }
 
-    public By licenseCard = By.xpath("//ef-rls-sprz-item-och//a[@class='register-card__header-title title-link']");
+    private By licenseCard = By.xpath("//ef-rls-sprz-item-och//a[@class='register-card__header-title title-link']");
+    private By searchBtn = By.xpath("//a[@ng-click='actions.search()']");
 
 
+    public void goToLicenseRlsPage() throws InterruptedException {
+        getElementClick(searchBtn);
+        getElementClick(licenseCard);
+    }
 }

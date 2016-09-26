@@ -16,5 +16,11 @@ public class MenuPage extends BasePage {
         super(driver);
     }
 
+    public void goToLicenseRegistrySubjectsPage() throws InterruptedException {
+        getElementClick(registryItem);
+        getElementClick(licensesRegistry);
+        //String url = getDriver().getCurrentUrl()+"#!/licenses";
+        //getDriver().get(url);
+    }
 
 }

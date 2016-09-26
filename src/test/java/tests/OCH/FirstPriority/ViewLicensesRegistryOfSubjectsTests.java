@@ -15,15 +15,16 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
 
     //Группа тестов : Реестр лицензий субъекта РФ
 
-    private static MenuPage MENU_PAGE;
-    private static LicensesRegistryOfSubjectsPage LICENSE_REGISTRY_SUBJECTS;
+
+    private static LicensesRegistryOfSubjectsPage LICENSE_REGISTRY_SUBJECTS_PAGE;
     private static  LicensePageRLS LICENSE_RLS_PAGE;
+    private static MenuPage MENU_PAGE;
 
 
     @BeforeClass
     public static void beforeClassMethod() {
         MENU_PAGE = new MenuPage(webDriver);
-        LICENSE_REGISTRY_SUBJECTS = new LicensesRegistryOfSubjectsPage(webDriver);
+        LICENSE_REGISTRY_SUBJECTS_PAGE = new LicensesRegistryOfSubjectsPage(webDriver);
         LICENSE_RLS_PAGE =  new LicensePageRLS(webDriver);
 
     }
@@ -31,16 +32,18 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
     @Test(description = "LIC_27 Просмотр карточки лицензии в открытой части РЛС")
     public void testViewLicenseCardInOpenPartRLS() throws InterruptedException {
 
-        MENU_PAGE.getElementClick(MENU_PAGE.registryItem);
-        MENU_PAGE.getElementClick(MENU_PAGE.licensesRegistry);
-        LICENSE_REGISTRY_SUBJECTS.getElementClick(LICENSE_REGISTRY_SUBJECTS.licenseCard);
+        MENU_PAGE.goToLicenseRegistrySubjectsPage();
+        LICENSE_REGISTRY_SUBJECTS_PAGE.goToLicenseRlsPage();
 
         Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseRegistrationInfoTabsActive(),true);
 
-        LICENSE_RLS_PAGE.getElementClick(LICENSE_RLS_PAGE.licenseBusinessDocs);
+        LICENSE_RLS_PAGE.clickLicenseBusinessDocsTab();
+
 
         sleep(2000);
 
 
     }
+
+
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static java.lang.Thread.getAllStackTraces;
 import static java.lang.Thread.sleep;
 import static org.testng.Assert.assertEquals;
 
@@ -88,4 +89,6 @@ public class MainPage extends BasePage {
             return true;
         }else return false;
     }
+
+
 }
