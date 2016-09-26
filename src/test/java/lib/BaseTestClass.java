@@ -30,6 +30,7 @@ public class BaseTestClass {
     webDriver = new ChromeDriver();
     webDriver.manage().window().maximize();
     webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
   }
 
   @AfterClass
