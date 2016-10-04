@@ -35,13 +35,10 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
         MENU_PAGE.goToLicenseRegistrySubjectsPage();
         LICENSE_REGISTRY_SUBJECTS_PAGE.goToLicenseRlsPage();
 
-        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseRegistrationInfoTabsActive(),true);
+        Assert.assertEquals(LICENSE_RLS_PAGE.verifyGeneralInformationTabActive(),true);
 
         LICENSE_RLS_PAGE.clickLicenseBusinessDocsTab();
-
-
-        sleep(2000);
-
+        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsTabActive(),true);
 
     }
 

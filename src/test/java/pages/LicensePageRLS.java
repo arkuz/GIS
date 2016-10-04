@@ -16,27 +16,40 @@ public class LicensePageRLS extends BasePage {
     }
 
     // Вкладки "Информация о регистрации лицензии"
-    public By licenseRegistrationInfoTabs = By.xpath("//div[@class='tab-base ng-isolate-scope']/ul");
     public By licenseBusinessDocs = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Документы лицензионного дела']");
+    public By licenseRegistrationActiveTab = By.xpath("//div[@class='tab-base ng-isolate-scope']/ul/li[contains(@class,'active')]/a");
 
-
-    // проверка, что активная вкладка - "Общие сведения"
-    public boolean verifyLicenseRegistrationInfoTabsActive(){
-        int flag = 1;
-        String attr = "ng-isolate-scope active";
-        String attr1 = "Общие сведения";
-        List<WebElement> bc = getElements(licenseRegistrationInfoTabs);
-        for(int i=0;i<bc.size();i++) {
-            if (bc.get(i).findElement(By.xpath(".//li")).getAttribute("class").equals(attr) &&
-                    bc.get(i).findElement(By.xpath(".//li/a")).getText().equals(attr1)) {
-                return true;
-            }
+    // проверяем, что текст активной вкладки = tabText
+    public boolean verifyLicenseRegistrationInfoActiveTab(String tabText){
+        if (getLicenseRegistrationInfoActiveTab().getText().equals(tabText)) {
+            return true;
         }
         return false;
     }
 
-    public void clickLicenseBusinessDocsTab() {
-        getElement(licenseBusinessDocs);
+    //получить активную вкладку
+    public WebElement getLicenseRegistrationInfoActiveTab(){
+        return getElement(licenseRegistrationActiveTab);
     }
+    // проверка, что активная вкладка - "Общие сведения"
+    public boolean verifyGeneralInformationTabActive(){
+        if (verifyLicenseRegistrationInfoActiveTab("Общие сведения")){
+            return true;
+        }
+        return  false;
+    }
+
+    // проверка, что активная вкладка - "Документы лицензионного дела"
+    public boolean verifyLicenseBusinessDocsTabActive(){
+        if (verifyLicenseRegistrationInfoActiveTab("Документы лицензионного дела")){
+            return true;
+        }
+        return  false;
+    }
+
+    public void clickLicenseBusinessDocsTab() throws InterruptedException {
+        getElementClick(licenseBusinessDocs);
+    }
+
 
 }
