@@ -58,6 +58,22 @@ public class BasePage {
         }
     }
 
+    public void getElementSendKeys(By locator, String text) throws InterruptedException {
+        WebElement myDynamicElement = WAIT.waitForClickabilityOfElement(locator);
+        int i = 0;
+        while (i < 20) {
+            try {
+                myDynamicElement.sendKeys(text);
+                return;
+            }
+            catch (WebDriverException e){
+                i++;
+                sleep(1000);
+                continue;
+            }
+        }
+    }
+
     public String getElementText(By locator) {
         return webDriver.findElement(locator).getText();
     }
