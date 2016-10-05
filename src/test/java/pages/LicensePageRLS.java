@@ -1,6 +1,5 @@
 package pages;
 
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -16,12 +15,21 @@ public class LicensePageRLS extends BasePage {
     }
 
     // Вкладки "Информация о регистрации лицензии"
-    public By licenseBusinessDocs = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Документы лицензионного дела']");
+    public By licenseBusinessDocsTab = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Документы лицензионного дела']");
+    public By licenseInformationOfHousesTab = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Сведения о домах']");
     public By licenseRegistrationActiveTab = By.xpath("//div[@class='tab-base ng-isolate-scope']/ul/li[contains(@class,'active')]/a");
     public By licenseBusinessDocsCardHeader = By.xpath("//div[@class='register-card__header clearfix']");
-    public By licenseBusinessDocsCardIsAbsent = By.xpath("//h1[text()= 'Отсутствуют результаты поиска']");
+    public By licenseInformationOfHousesResultsTable = By.xpath("//ef-rlsoch-prkd-res//span[contains(text(),'Адрес дома')]");
+    public By licenseBusinessDocsSearchResultsH1IsAbsent = By.xpath("//ef-rlsoch-przkld/h1[contains(text(),'Отсутствуют результаты поиска')]");
+    public By licenseInformationOfHousesSearchResultsH1IsAbsent = By.xpath("//ef-rlsoch-prkd-res//h1[contains(text(),'Отсутствуют результаты поиска')]");
     public By editLicenseBusinessDocName = By.xpath("//input[@ng-model='searchParameters.nameDoc']");
     public By buttonLicenseBusinessDocSearch = By.xpath("//button[@type='submit']");
+    public By buttonInformationOfHousesSearch = By.xpath("//a[@ng-click='actions.search()']");
+
+    // Поиск документов лицензионного дела
+    public void searchInformationOfHouses() throws InterruptedException {
+        getElementClick(buttonInformationOfHousesSearch);
+    }
 
     // Поиск документов лицензионного дела
     public void searchLicenseBusinessDoc() throws InterruptedException {
@@ -58,9 +66,23 @@ public class LicensePageRLS extends BasePage {
         return  false;
     }
 
+    // проверка, что активная вкладка - "Сведения о домах"
+    public boolean verifyLicenseInformationOfHousesTabActive(){
+        if (verifyLicenseRegistrationInfoActiveTab("Сведения о домах")){
+            return true;
+        }
+        return  false;
+    }
+
+    // Переход к вкладке "Сведения о домах"
+    public void clicklicenseInformationOfHousesTab() throws InterruptedException {
+        getElementClick(licenseInformationOfHousesTab);
+    }
+
+
     // Переход к вкладке "Документы лицензионного дела"
     public void clickLicenseBusinessDocsTab() throws InterruptedException {
-        getElementClick(licenseBusinessDocs);
+        getElementClick(licenseBusinessDocsTab);
     }
 
     // Документы лицензионного дела существуют
@@ -74,10 +96,21 @@ public class LicensePageRLS extends BasePage {
         }
     }
 
-    // Документы лицензионного дела не прикреплены
-    public boolean licenseBusinessDocsIsAbsent() {
+    // Отсутствуют результаты поиска на вкладке "Документы лицензионного дела". h1 = Отсутствуют результаты поиска.
+    public boolean licenseBusinessDocsSearchResultsIsAbsent() {
         try{
-            WebElement we = WAIT.waitForVisibilityOfElement(licenseBusinessDocsCardIsAbsent,1);
+            WebElement we = WAIT.waitForVisibilityOfElement(licenseBusinessDocsSearchResultsH1IsAbsent,2);
+            return true;
+        }
+        catch (TimeoutException  e){
+            return false;
+        }
+    }
+
+    // Отсутствуют результаты поиска на вкладке "Сведения о домах". h1 = Отсутствуют результаты поиска.
+    public boolean licenseInformationOfHousesSearchResultsIsAbsent() {
+        try{
+            WebElement we = WAIT.waitForVisibilityOfElement(licenseInformationOfHousesSearchResultsH1IsAbsent,2);
             return true;
         }
         catch (TimeoutException  e){
@@ -87,9 +120,31 @@ public class LicensePageRLS extends BasePage {
 
     // Проверяем, что документы лицензионного дела существуют или появляется сообщение - "Отсутствуют результаты поиска"
     public boolean verifyLicenseBusinessDocsResults() {
-        if(licenseBusinessDocsExist() || licenseBusinessDocsIsAbsent()){
+        if(licenseBusinessDocsExist() || licenseBusinessDocsSearchResultsIsAbsent()){
             return true;
         }
         return false;
     }
+
+    // Таблица со сведениями о домах существует
+    public boolean licenseInformationOfHousesExist() {
+        try{
+            WebElement we = WAIT.waitForVisibilityOfElement(licenseInformationOfHousesResultsTable,1);
+            // добавить переход на карту из адреса дома
+            return true;
+        }
+        catch (TimeoutException e){
+            return false;
+        }
+    }
+
+    // Проверяем, что Таблица со сведениями о домах существует или появляется сообщение - "Отсутствуют результаты поиска"
+    public boolean verifyLicenseInformationOfHousesResults() {
+        if(licenseInformationOfHousesExist() || licenseInformationOfHousesSearchResultsIsAbsent()){
+            return true;
+        }
+        return false;
+    }
+
+
 }

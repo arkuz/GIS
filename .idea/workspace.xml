@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb09642-4d95-4c36-a014-40b53f6cba6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java" afterPath="$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/LicensePageRLS.java" afterPath="$PROJECT_DIR$/src/test/java/pages/LicensePageRLS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java" afterPath="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java" />
     </list>
@@ -29,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewLicensesRegistryOfSubjectsTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewLicensesRegistryOfSubjectsTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+            <state relative-caret-position="31">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,15 +38,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LicensePageRLS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LicensePageRLS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/LicensePageRLS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="120" />
+            <state relative-caret-position="425">
+              <caret line="132" column="55" selection-start-line="132" selection-start-column="55" selection-end-line="132" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1726#1727#0" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
+                <element signature="e#2394#2395#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +55,8 @@
       <file leaf-file-name="Waiters.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/helpers/Waiters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="109">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/LicensesRegistryOfSubjectsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/MenuPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LicensePageRLS.java" />
       </list>
     </option>
@@ -800,34 +797,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests - 2016.10.05 at 21h 33m 42s.xml">
-      <configuration name="ViewLicensesRegistryOfSubjectsTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 21h 47m 43s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 41m 52s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 03m 45s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 41m 53s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 06m 59s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 42m 43s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 08m 47s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 45m 03s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 10m 13s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 46m 58s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 11m 52s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 50m 59s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 14m 38s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 51m 02s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 17m 34s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 23h 54m 39s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.05 at 22h 19m 03s.xml">
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.06 at 00h 07m 49s.xml">
+      <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ViewLicensesRegistryOfSubjectsTests_testViewLicenseCardInOpenPartRLS - 2016.10.06 at 00h 10m 22s.xml">
       <configuration name="ViewLicensesRegistryOfSubjectsTests.testViewLicenseCardInOpenPartRLS" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -874,7 +871,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -883,13 +880,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/uncategorized/OrgRegAndGiveFunc.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/lib/BaseTestClass.java">
@@ -1078,39 +1068,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="457" column="0" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/MethodInvocationHelper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/Waiters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,14 +1092,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LicensePageRLS.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="120" />
+        <state relative-caret-position="132">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding>
+            <element signature="e#5983#5984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/Waiters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="457" column="0" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LicensePageRLS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="132" column="55" selection-start-line="132" selection-start-column="55" selection-end-line="132" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewLicensesRegistryOfSubjectsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

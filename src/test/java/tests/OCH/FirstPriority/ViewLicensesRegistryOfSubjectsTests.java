@@ -42,7 +42,11 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
         LICENSE_RLS_PAGE.searchLicenseBusinessDoc();
         Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsResults(),true);
 
+        LICENSE_RLS_PAGE.clicklicenseInformationOfHousesTab();
+        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesTabActive(),true);
 
+        LICENSE_RLS_PAGE.searchInformationOfHouses();
+        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesResults(),true);
     }
 
 
