@@ -13,6 +13,8 @@ public class LicensesRegistryOfSubjectsPage extends BasePage {
     }
 
     private By licenseCard = By.xpath("//ef-rls-sprz-item-och//a[@class='register-card__header-title title-link']");
+    // для проверки, когда в сведениях по домам присутствуют объекты, для перехода к карте
+    //private By licenseCard = By.xpath("//ef-rls-sprz-item-och//a/span[contains(text(),'026000232 от 23.09.2015')]");
     private By searchBtn = By.xpath("//a[@ng-click='actions.search()']");
 
 

@@ -30,7 +30,7 @@ public class BaseTestClass {
     //webDriver = new FirefoxDriver();
     webDriver = new ChromeDriver();
     webDriver.manage().window().maximize();
-    webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    webDriver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
     webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
   }
 
