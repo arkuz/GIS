@@ -15,4 +15,7 @@ public class GosbarPage extends BasePage {
     //locators
     public By siteMap = By.xpath("//div[@class='portal-header-gosbar']//a[@href='#!/site-map']");
 
+    public void clickSiteMap() throws InterruptedException {
+        getElementClick(siteMap);
+    }
 }

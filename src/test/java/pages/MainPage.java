@@ -91,4 +91,19 @@ public class MainPage extends BasePage {
     }
 
 
+    public void clickUsefulLinks() throws InterruptedException {
+        getElementClick(usefulLinksBtn);
+    }
+
+    public void viewConsumersLink() throws InterruptedException {
+        getElementClick(consumersLink);
+    }
+
+    public void viewSuppliersLink() throws InterruptedException {
+        getElementClick(suppliersLink);
+    }
+
+    public void viewAuthoritiesLink() throws InterruptedException {
+        getElementClick(authoritiesLink);
+    }
 }

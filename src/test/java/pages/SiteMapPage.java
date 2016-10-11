@@ -14,4 +14,8 @@ public class SiteMapPage extends BasePage {
 
     //locators
     public By usefulLinks = By.xpath("//a[@href='#!/useful-links']");
+
+    public void clickUsefulLinks() throws InterruptedException {
+        getElementClick(usefulLinks);
+    }
 }

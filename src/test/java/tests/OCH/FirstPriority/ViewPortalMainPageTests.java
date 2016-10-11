@@ -36,12 +36,12 @@ public class ViewPortalMainPageTests extends BaseTestClass{
     @Test(description = "OCH_9 Просмотр полезных ссылок")
     public void testViewUsefulLinks() throws InterruptedException {
         //Заходим на тест с главной страницы
-        MAIN_PAGE.getElementClick(MAIN_PAGE.usefulLinksBtn);
+        MAIN_PAGE.clickUsefulLinks();
         viewUsefulLinksMethod();
 
         ///Заходим на тест через госбар
-        MAIN_PAGE.getElementClick(GOSBAR_PAGE.siteMap);
-        SITE_MAP_PAGE.getElementClick(SITE_MAP_PAGE.usefulLinks);
+        GOSBAR_PAGE.clickSiteMap();
+        SITE_MAP_PAGE.clickUsefulLinks();
         viewUsefulLinksMethod();
 
     }
@@ -50,15 +50,15 @@ public class ViewPortalMainPageTests extends BaseTestClass{
     public void testViewUsefulLinksWithInnerPages() throws InterruptedException {
 
         //Просмотр блока полезных ссылок с потребителей
-        MAIN_PAGE.getElementClick(MAIN_PAGE.consumersLink);
+        MAIN_PAGE.viewConsumersLink();
         ViewUsefulLinksWithInnerPagesMethod();
 
         //Просмотр блока полезных ссылок с поставщиков
-        MAIN_PAGE.getElementClick(MAIN_PAGE.suppliersLink);
+        MAIN_PAGE.viewSuppliersLink();
         ViewUsefulLinksWithInnerPagesMethod();
 
         //Просмотр блока полезных ссылок с органов власти
-        MAIN_PAGE.getElementClick(MAIN_PAGE.authoritiesLink);
+        MAIN_PAGE.viewAuthoritiesLink();
         ViewUsefulLinksWithInnerPagesMethod();
     }
 
