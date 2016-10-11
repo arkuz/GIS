@@ -77,11 +77,11 @@ public class ViewPortalMainPageTests extends BaseTestClass{
         assertEquals(VIEW_USEFUL_LINK_PAGE.verifyItemLinkLength(),true);
 
         Set<String> oldWindowHandler = VIEW_USEFUL_LINK_PAGE.getWindowsSet();
-        VIEW_USEFUL_LINK_PAGE.getElementClick(VIEW_USEFUL_LINK_PAGE.itemLinkFirst);
+        VIEW_USEFUL_LINK_PAGE.changeFirstLink();
         VIEW_USEFUL_LINK_PAGE.getNewWindow(oldWindowHandler);
 
-        assertEquals(VIEW_USEFUL_LINK_PAGE.getElementText(VIEW_USEFUL_LINK_PAGE.personalAccountLink),
-                VIEW_USEFUL_LINK_PAGE.str_personalAccountLink);
+        assertEquals(VIEW_USEFUL_LINK_PAGE.getPersonalAccountLinkText(),
+                VIEW_USEFUL_LINK_PAGE.getPersonalAccountLinkValue());
 
         VIEW_USEFUL_LINK_PAGE.closeCurrentWindow();
         VIEW_USEFUL_LINK_PAGE.getMainWindow(oldWindowHandler);
