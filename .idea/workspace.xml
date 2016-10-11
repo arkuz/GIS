@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4eb09642-4d95-4c36-a014-40b53f6cba6c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/ViewUsefulLinksPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/ViewUsefulLinksPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewPortalMainPageTests.java" afterPath="$PROJECT_DIR$/src/test/java/tests/OCH/FirstPriority/ViewPortalMainPageTests.java" />
     </list>
     <ignored path="alfa.iws" />
     <ignored path=".idea/workspace.xml" />

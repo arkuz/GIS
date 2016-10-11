@@ -63,5 +63,17 @@ public class ViewUsefulLinksPage extends BasePage{
         }else return false;
     }
 
+    public void changeFirstLink() throws InterruptedException {
+        getElementClick(itemLinkFirst);
+    }
+
+    public String getPersonalAccountLinkText() {
+        return getElementText(personalAccountLink);
+    }
+
+    public String getPersonalAccountLinkValue() {
+        return str_personalAccountLink;
+    }
+
 }
 
