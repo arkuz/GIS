@@ -11,6 +11,7 @@ public class MenuPage extends BasePage {
     // Реестры
     public By registryItem = By.xpath("//div[@id='main-menu']//a[contains(text(),'Реестры')]");
     public By licensesRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/licenses']");
+    public By disqualifiedPersonsRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/licenses/person/search']");
 
     public MenuPage(WebDriver driver){
         super(driver);
@@ -21,6 +22,11 @@ public class MenuPage extends BasePage {
         getElementClick(licensesRegistry);
         //String url = getDriver().getCurrentUrl()+"#!/licenses";
         //getDriver().get(url);
+    }
+
+    public void goToDisqualifiedPersonsRegistryPage() throws InterruptedException {
+        getElementClick(registryItem);
+        getElementClick(disqualifiedPersonsRegistry);
     }
 
 }

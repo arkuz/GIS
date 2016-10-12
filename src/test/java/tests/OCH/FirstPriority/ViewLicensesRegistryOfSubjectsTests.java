@@ -17,7 +17,7 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
 
 
     private static LicensesRegistryOfSubjectsPage LICENSE_REGISTRY_SUBJECTS_PAGE;
-    private static  LicensePageRLS LICENSE_RLS_PAGE;
+    private static LicensePageRLS LICENSE_RLS_PAGE;
     private static MenuPage MENU_PAGE;
 
 
@@ -47,6 +47,13 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
 
         LICENSE_RLS_PAGE.searchInformationOfHouses();
         Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesResults(),true);
+
+    }
+
+    @Test(description = "LIC_25 Просмотр карточки сведений о дисквалифицированном лице в открытой части реестра дискв.лиц")
+    public void testViewDisqualifiedPersonsCardInOpenPart() throws InterruptedException {
+
+        MENU_PAGE.goToDisqualifiedPersonsRegistryPage();
 
     }
 
