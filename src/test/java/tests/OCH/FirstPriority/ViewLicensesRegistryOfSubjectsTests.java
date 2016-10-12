@@ -1,12 +1,12 @@
 package tests.OCH.FirstPriority;
 
 import lib.BaseTestClass;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.*;
 
 import static java.lang.Thread.sleep;
+import static org.testng.Assert.*;
 
 /**
  * Created by Arkuz on 24.09.2016.
@@ -15,10 +15,10 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
 
     //Группа тестов : Реестр лицензий субъекта РФ
 
-
     private static LicensesRegistryOfSubjectsPage LICENSE_REGISTRY_SUBJECTS_PAGE;
     private static LicensePageRLS LICENSE_RLS_PAGE;
     private static MenuPage MENU_PAGE;
+    private static DisqualifiedPersonsRegistryPage DISQUALIFIED_PERSONS_REGISTRY_PAGE;
 
 
     @BeforeClass
@@ -26,6 +26,8 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
         MENU_PAGE = new MenuPage(webDriver);
         LICENSE_REGISTRY_SUBJECTS_PAGE = new LicensesRegistryOfSubjectsPage(webDriver);
         LICENSE_RLS_PAGE =  new LicensePageRLS(webDriver);
+        DISQUALIFIED_PERSONS_REGISTRY_PAGE = new DisqualifiedPersonsRegistryPage(webDriver);
+
 
     }
 
@@ -34,19 +36,19 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
 
         MENU_PAGE.goToLicenseRegistrySubjectsPage();
         LICENSE_REGISTRY_SUBJECTS_PAGE.goToLicenseRlsPage();
-        Assert.assertEquals(LICENSE_RLS_PAGE.verifyGeneralInformationTabActive(),true);
+        assertEquals(LICENSE_RLS_PAGE.verifyGeneralInformationTabActive(),true);
 
         LICENSE_RLS_PAGE.clickLicenseBusinessDocsTab();
-        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsTabActive(),true);
+        assertEquals(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsTabActive(),true);
 
         LICENSE_RLS_PAGE.searchLicenseBusinessDoc();
-        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsResults(),true);
+        assertEquals(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsResults(),true);
 
         LICENSE_RLS_PAGE.clicklicenseInformationOfHousesTab();
-        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesTabActive(),true);
+        assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesTabActive(),true);
 
         LICENSE_RLS_PAGE.searchInformationOfHouses();
-        Assert.assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesResults(),true);
+        assertEquals(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesResults(),true);
 
     }
 
@@ -54,6 +56,9 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
     public void testViewDisqualifiedPersonsCardInOpenPart() throws InterruptedException {
 
         MENU_PAGE.goToDisqualifiedPersonsRegistryPage();
+        DISQUALIFIED_PERSONS_REGISTRY_PAGE.searchDisqualifiedPersons();
+        assertEquals(DISQUALIFIED_PERSONS_REGISTRY_PAGE.verifyDisqualifiedPersonsResults(),true);
+
 
     }
 
