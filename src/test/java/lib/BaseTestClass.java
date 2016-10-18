@@ -35,8 +35,8 @@ public class BaseTestClass {
 
   @BeforeClass
   public static void startBrowser() {
-    //webDriver = new FirefoxDriver();
-    webDriver = new ChromeDriver();
+    webDriver = new FirefoxDriver();
+    //webDriver = new ChromeDriver();
     //webDriver = startNewDriver();
     webDriver.manage().window().maximize();
     webDriver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);

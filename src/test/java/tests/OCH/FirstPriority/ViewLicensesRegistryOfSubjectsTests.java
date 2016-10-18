@@ -19,6 +19,7 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
     private static LicensePageRLS LICENSE_RLS_PAGE;
     private static MenuPage MENU_PAGE;
     private static DisqualifiedPersonsRegistryPage DISQUALIFIED_PERSONS_REGISTRY_PAGE;
+    private static SvodLicenseRegistryPage SVOD_LICENSE_REGISTRY_PAGE;
 
 
     @BeforeClass
@@ -27,8 +28,7 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
         LICENSE_REGISTRY_SUBJECTS_PAGE = new LicensesRegistryOfSubjectsPage(webDriver);
         LICENSE_RLS_PAGE =  new LicensePageRLS(webDriver);
         DISQUALIFIED_PERSONS_REGISTRY_PAGE = new DisqualifiedPersonsRegistryPage(webDriver);
-
-
+        SVOD_LICENSE_REGISTRY_PAGE = new SvodLicenseRegistryPage(webDriver);
     }
 
     @Test(description = "LIC_27 Просмотр карточки лицензии в открытой части РЛС")
@@ -66,7 +66,8 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
     public void testViewLicenseCardInSvodLicensesRegistry() throws InterruptedException {
 
         MENU_PAGE.goToSvodLicensesRegistryPage();
-
+        SVOD_LICENSE_REGISTRY_PAGE.searchLicense();
+        assertEquals(SVOD_LICENSE_REGISTRY_PAGE.verifyLicenseSearchResults(),true);
 
 
     }
