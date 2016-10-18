@@ -10,27 +10,26 @@ import org.openqa.selenium.WebElement;
  */
 public class SvodLicenseRegistryPage extends BasePage {
 
+    private static LicensePageRLS LICENSE_RLS_PAGE;
+
     public SvodLicenseRegistryPage(WebDriver driver){
         super(driver);
+        LICENSE_RLS_PAGE =  new LicensePageRLS(driver);
     }
+
 
     private By searchBtn = By.xpath("//a[@ng-click='actions.search()']");
     private By licenseSearchResultsH1IsAbsent = By.xpath("//div[@class='container app-content-new ng-scope']/h1[contains(text(),'Отсутствуют результаты поиска')]");
     private By licenseCardHeaderLink = By.xpath("//div[@class='register-card__header clearfix']//a[@class='register-card__header-title title-link']");
     private By showCardBtn = By.xpath("//a[@ng-click='actions.showCard()']");
+    private By backToRegistryLink = By.xpath("//span[@ng-click='actions.backToRegistry()']");
+    private By disqualifiedPersonsHeader = By.xpath("");
 
     public void searchLicense() throws InterruptedException {
         getElementClick(searchBtn);
     }
 
     /*---------------------------------------------------------*/
-
-
-    private By backToRegistryLink = By.xpath("//a[@ng-click='actions.backToRegistry()']");
-    private By disqualifiedPersonsHeader = By.xpath("//div[@ng-if='pageTitle']/h1[contains(text(),'Реестр дисквалифицированных лиц')]");
-    //для проверки варианта с карточками
-    private By deleteStatusInfo = By.xpath("//*[@id='s2id_autogen2']/ul/li[1]/a");
-
 
     // Отсутствуют результаты поиска.
     public boolean licenseSearchResultsIsAbsent() {
@@ -48,10 +47,20 @@ public class SvodLicenseRegistryPage extends BasePage {
         try{
             WebElement we = WAIT.waitForVisibilityOfElement(licenseCardHeaderLink,2);
 
+            // Переход в карточку лиценщзии, а затем в карточку в реестре субъектов
             getElementClick(licenseCardHeaderLink);
             getElementClick(showCardBtn);
+            // Проверка работоспособности вкладок и возврат в Реестр лицензий субъекта
+            if(LICENSE_RLS_PAGE.verifyGeneralInformationTabActive()){
+                LICENSE_RLS_PAGE.clickLicenseBusinessDocsTab();
+            } if(LICENSE_RLS_PAGE.verifyLicenseBusinessDocsTabActive()){
+                LICENSE_RLS_PAGE.clicklicenseInformationOfHousesTab();
+                } if(LICENSE_RLS_PAGE.verifyLicenseInformationOfHousesTabActive()){
+                     LICENSE_RLS_PAGE.clickLicenseGeneralInfoTab();
+                     getElementClick(backToRegistryLink);
+                     LICENSE_RLS_PAGE.waitLicenseRegistrySubjectsPage();
+                }
 
-           // WebElement we1 = WAIT.waitForVisibilityOfElement(disqualifiedPersonsHeader,2);
             return true;
         }
         catch (TimeoutException e){

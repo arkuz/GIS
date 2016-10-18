@@ -17,6 +17,7 @@ public class LicensePageRLS extends BasePage {
     }
 
     // Вкладки "Информация о регистрации лицензии"
+    public By licenseGeneralInfoTab = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Общие сведения']");
     public By licenseBusinessDocsTab = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Документы лицензионного дела']");
     public By licenseInformationOfHousesTab = By.xpath("//div[@class='tab-base ng-isolate-scope']//li/a[text()='Сведения о домах']");
     public By licenseRegistrationActiveTab = By.xpath("//div[@class='tab-base ng-isolate-scope']/ul/li[contains(@class,'active')]/a");
@@ -29,6 +30,7 @@ public class LicensePageRLS extends BasePage {
     public By buttonLicenseBusinessDocSearch = By.xpath("//button[@type='submit']");
     public By buttonInformationOfHousesSearch = By.xpath("//a[@ng-click='actions.search()']");
     public By searchObjectsOnMapIdent = By.xpath("//*[@id='search-left-column']/div");
+    public By licenseRegistrySubjectsH1 = By.xpath("//ef-rlsoch-form-header//h1[contains(text(),'Реестр лицензий субъекта')]");
 
     // Поиск сведений о домах
     public void searchInformationOfHouses() throws InterruptedException {
@@ -76,6 +78,11 @@ public class LicensePageRLS extends BasePage {
             return true;
         }
         return  false;
+    }
+
+    // Переход к вкладке "Общие сведения"
+    public void clickLicenseGeneralInfoTab() throws InterruptedException {
+        getElementClick(licenseGeneralInfoTab);
     }
 
     // Переход к вкладке "Сведения о домах"
@@ -152,5 +159,9 @@ public class LicensePageRLS extends BasePage {
         return false;
     }
 
+    // Документы лицензионного дела существуют
+    public void waitLicenseRegistrySubjectsPage(){
+        WebElement we = WAIT.waitForVisibilityOfElement(licenseRegistrySubjectsH1,2);
+    }
 
 }
