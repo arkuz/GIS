@@ -9,9 +9,10 @@ import org.openqa.selenium.WebDriver;
 public class MenuPage extends BasePage {
 
     // Реестры
-    public By registryItem = By.xpath("//div[@id='main-menu']//a[contains(text(),'Реестры')]");
-    public By licensesRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/licenses']");
-    public By disqualifiedPersonsRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/licenses/person/search']");
+    private By registryItem = By.xpath("//div[@id='main-menu']//a[contains(text(),'Реестры')]");
+    private By licensesRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/licenses']");
+    private By disqualifiedPersonsRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/licenses/person/search']");
+    private By svodLicensesRegistry = By.xpath("//div[@id='main-menu']//a[@href='#!/srlLicenses']");
 
     public MenuPage(WebDriver driver){
         super(driver);
@@ -27,6 +28,11 @@ public class MenuPage extends BasePage {
     public void goToDisqualifiedPersonsRegistryPage() throws InterruptedException {
         getElementClick(registryItem);
         getElementClick(disqualifiedPersonsRegistry);
+    }
+
+    public void goToSvodLicensesRegistryPage() throws InterruptedException {
+        getElementClick(registryItem);
+        getElementClick(svodLicensesRegistry);
     }
 
 }
