@@ -62,5 +62,14 @@ public class ViewLicensesRegistryOfSubjectsTests extends BaseTestClass {
 
     }
 
+    @Test(description = "LIC_29 Просмотр карточки лицензии в сводном федеральном реестре лицензий")
+    public void testViewLicenseCardInSvodLicensesRegistry() throws InterruptedException {
+
+        MENU_PAGE.goToSvodLicensesRegistryPage();
+
+
+
+    }
+
 
 }
